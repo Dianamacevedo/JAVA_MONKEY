@@ -12,10 +12,6 @@
 		<meta name="author" content="satur">
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-
 	</head>
 	<style>
                 canvas {
@@ -42,16 +38,17 @@
 		}
 		#boton2 {
 			position: absolute;
-			top: 60%;
-			left: 10%;
-			background-color: transparent;
-                        border: transparent
+			top: 48%;
+			left: 28%;
+			background-color: black;
+                        border: green;
+                        
 		}                
                 
 	</style>
 	<body onkeyup="saltar(event);">
 		
-                <div id="contenedor">
+        <center> <div id="contenedor">
 		<canvas width="600" height="300" id="canvas">
 		
                 </canvas>
@@ -60,7 +57,7 @@
 				<img src="imagenes/play.png" id="imgbtn" />
 			</button>
 		</div>
-                    
+        </center>
                	<form>
 		 <input type="button" id ="boton2" onclick="iniciarSalto()"/>
 		</form>

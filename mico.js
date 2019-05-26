@@ -178,7 +178,7 @@ for(i=0;i<=nbasura;i++){
 }
 var tiempo;
 //funciones de control
-var velocidadSalto = 60;
+var velocidadSalto = 25;
 var desplazamientoSalto = 5;
 var puedeSaltar = true;
 var salto;
@@ -217,7 +217,7 @@ function findeJuego(){
 	mundo = new Mundo();
 	Monk = new Monkey();
 	velocidad = 50;
-	velocidadSalto = 50;
+	velocidadSalto = 30;
 	basura = new Basura(600);
 	for(i=0;i<=nbasura;i++){
 	basura.agregar();
