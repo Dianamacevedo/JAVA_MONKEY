@@ -12,16 +12,9 @@
 		<meta name="author" content="satur">
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-                <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1,
-maximum-scale=no"/>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 
 	</head>
 	<style>
@@ -49,17 +42,16 @@ maximum-scale=no"/>
 		}
 		#boton2 {
 			position: absolute;
-			top: 40%;
-			left: 30%;
-			background-color: black;
-                        border: green;
-                        
+			top: 60%;
+			left: 10%;
+			background-color: transparent;
+                        border: transparent
 		}                
                 
 	</style>
 	<body onkeyup="saltar(event);">
 		
-         <div id="contenedor">
+                <div id="contenedor">
 		<canvas width="600" height="300" id="canvas">
 		
                 </canvas>
@@ -68,8 +60,9 @@ maximum-scale=no"/>
 				<img src="imagenes/play.png" id="imgbtn" />
 			</button>
 		</div>
-                 	<form>
-		 <input type="button" id ="boton2" class = "spinner-grow spinner-grow-sm" onclick="iniciarSalto()"/>
+                    
+               	<form>
+		 <input type="button" id ="boton2" onclick="iniciarSalto()"/>
 		</form>
 		</div>
 		<script src="mico.js"></script>
